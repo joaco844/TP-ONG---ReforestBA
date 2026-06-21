@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReForesta BA — Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-brand">
+            <a class="nav-logo" href="index.html"> ReForesta BA</a>
+            <label for="nav-toggle" class="nav-hamburger">&#9776;</label>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-item">Inicio</a></li>
+                <li><a href="acerca.html" class="nav-item">Acerca de</a></li>
+                <li><a href="proyectos.html" class="nav-item">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html" class="nav-item activo">Contacto</a></li>
+                <li><a href="donar.html" class="nav-item nav-item-cta">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+
+            <div id="titulo">
+                <h1>Contacto</h1>
+            </div>
+
+            <div class="contacto-grid">
+
+                <section class="seccion">
+                    <h2 class="titulo-seccion">Envianos un mensaje</h2>
+                    <form id="form-contacto" action="#" method="post">
+                        <div class="form-dos-col">
+                            <div class="form-grupo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="telefono">Teléfono (opcional)</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+54 11 0000-0000">
+                            </div>
+                            <div class="form-grupo form-full">
+                                <label for="asunto">Asunto</label>
+                                <select id="asunto" name="asunto">
+                                    <option value="">Seleccioná un tema...</option>
+                                    <option value="voluntariado">Quiero ser voluntario/a</option>
+                                    <option value="donacion">Información sobre donaciones</option>
+                                    <option value="proyecto">Proponer un proyecto en mi barrio</option>
+                                    <option value="prensa">Prensa y medios</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-grupo form-full">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje acá..." required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-form">Enviar mensaje</button>
+                    </form>
+                </section>
+
+                <section class="seccion">
+                    <h2 class="titulo-seccion">Encontranos</h2>
+
+                    <div class="info-item">
+                        <div class="info-texto">
+                            <h4>Correo electrónico</h4>
+                            <p>info@reforesba.org.ar</p>
+                            <p>voluntariado@reforesba.org.ar</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-texto">
+                            <h4>Sede</h4>
+                            <p>Ciudad Autónoma de Buenos Aires</p>
+                            <p>Argentina</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-texto">
+                            <h4>Redes sociales</h4>
+                            <p>Instagram: @reforesba</p>
+                            <p>Twitter / X: @reforesba</p>
+                            <p>Facebook: /reforesba</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-texto">
+                            <h4>Horarios de atención</h4>
+                            <p>Lunes a viernes: 9:00 a 18:00 hs</p>
+                            <p>Las campañas de campo se realizan los fines de semana.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-texto">
+                            <h4>¿Querés ser voluntario/a?</h4>
+                            <p>Completá el formulario con el asunto "Quiero ser voluntario/a" y te contactamos con la información de las próximas campañas.</p>
+                        </div>
+                    </div>
+
+                    <a href="donar.html" class="btn-cta" style="margin-top: 10px; display: inline-block;">Plantá tu árbol ahora</a>
+                </section>
+
+            </div>
+
+            <blockquote id="cuotes">
+                "Cada pregunta, cada inquietud, cada idea que nos acercás nos ayuda a crecer como comunidad."
+                <cite>— Equipo ReForesta BA</cite>
+            </blockquote>
+
+        </div>
+    </main>
+
+    <div id="modal-enviado" class="modal-overlay" onclick="if(event.target===this) cerrarEnviado()">
+        <div class="modal" style="text-align:center; padding: 60px 40px;">
+            <button class="modal-cerrar" onclick="cerrarEnviado()">✕</button>
+            <h2 class="titulo-seccion">Mensaje enviado</h2>
+            <p id="texto" style="margin: 16px 0 28px;">¡Gracias por contactarte! Te responderemos a la brevedad.</p>
+            <button onclick="cerrarEnviado()" class="btn-cta" style="font-size:1rem; padding:12px 32px;">Volver al sitio</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3> ReForesta BA</h3>
+                <p>Organización no gubernamental dedicada a la reforestación urbana en la Ciudad de Buenos Aires y el AMBA. Trabajamos por una ciudad más verde y sustentable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="proyectos.html">¿Qué hacemos?</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>Mail: info@reforesba.org.ar</p>
+                <p>Ubicación: Ciudad de Buenos Aires, Argentina</p>
+                <p>Instagram: @reforesba</p>
+                <p>Twitter: @reforesba</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 ReForesta BA — Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function cerrarEnviado() {
+            document.getElementById('modal-enviado').style.display = 'none';
+        }
+
+        document.getElementById('form-contacto').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('modal-enviado').style.display = 'flex';
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
