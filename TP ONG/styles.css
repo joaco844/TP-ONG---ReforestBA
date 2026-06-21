@@ -230,7 +230,8 @@ aside ul li {
 .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
 
 .card { background-color: #A68A64; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
-.card-imagen { height: 150px; background-color: #656D4A; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; }
+.card-imagen { height: 150px; background-color: #656D4A; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; overflow: hidden; }
+.card-imagen img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card-cuerpo { padding: 20px; flex: 1; display: flex; flex-direction: column; }
 .card-titulo { font-family: "Copse", system-ui; font-size: 1.15rem; color: #EDE0D4; margin-bottom: 8px; }
 .card-texto { font-family: "Roboto Condensed", sans-serif; color: #EDE0D4; font-size: 0.95rem; line-height: 1.5; flex: 1; margin-bottom: 16px; }
@@ -244,7 +245,8 @@ aside ul li {
 .mv-texto { font-family: "Roboto Condensed", sans-serif; color: #EDE0D4; font-size: 0.95rem; line-height: 1.6; }
 
 .blog-post { background-color: rgba(237, 224, 212, 0.93); border-radius: 16px; margin-bottom: 30px; overflow: hidden; display: flex; }
-.blog-imagen { width: 280px; min-height: 260px; background-color: #656D4A; display: flex; align-items: center; justify-content: center; font-size: 5rem; flex-shrink: 0; }
+.blog-imagen { width: 280px; min-height: 260px; background-color: #656D4A; display: flex; align-items: center; justify-content: center; font-size: 5rem; flex-shrink: 0; overflow: hidden; }
+.blog-imagen img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .blog-cuerpo { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
 .blog-tag { display: inline-block; background-color: #656D4A; color: #EDE0D4; padding: 4px 14px; border-radius: 20px; font-size: 0.8rem; font-family: "Copse", system-ui; margin-bottom: 10px; width: fit-content; }
 .blog-fecha { color: #7F5539; font-size: 0.85rem; font-family: "Roboto Condensed", sans-serif; margin-bottom: 8px; }
